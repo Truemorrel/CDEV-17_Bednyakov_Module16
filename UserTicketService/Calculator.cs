@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UserTicketService.Tests
+namespace UserTicketService
 {
-    internal class Program
+    public class Calculator
     {
-        static void Main(string[] args)
+        public int Add(int one, int two)
         {
+            return one + two;
         }
     }
 }

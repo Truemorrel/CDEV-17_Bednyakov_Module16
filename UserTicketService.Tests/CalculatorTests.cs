@@ -8,12 +8,13 @@ using System.Threading.Tasks;
 namespace UserTicketService.Tests
 {
     [TestFixture]
-    public class Class1
+    public class CalculatorTests
     {
         [Test]
-        public void Test1()
+        public void AddAlwaysReturnsExpectedValue()
         {
-            Assert.True(100 == 100);
+            var calculatorTest = new Calculator();
+            Assert.That(calculatorTest.Add(10, 220), Is.EqualTo(230));
         }
     }
 }
